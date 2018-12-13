@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Web prototype </title>
+    <style>
+        fieldset {
+     border: none;
+ }
+
+ body {
+     background-color: #EA5045;
+ }
+
+ input[type=text],
+ input[type=password] {
+     display: block;
+     background-color: #F0F0F0;
+     padding: 7px;
+ }
+
+ .wrapper {
+     position: relative;
+     text-align: center;
+
+ }
+
+ .form {
+     display: inline-block;
+     padding: 20px;
+     border: 0;
+
+ }
+
+</style>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <img src="logo-main-black-single.png" alt="kea_logo" width="40%" height="auto">
+        <form class="form" action="workspace.html">
+            <fieldset id="data-area">
+                <legend></legend>
+
+                <input type="text" placeholder="EMAIL" name="Email" required> <br>
+                <input type="password" placeholder="PASSWORD" name="Password" required><br>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember Me
+                </label>
+            </fieldset>
+
+            <fieldset id="button-area">
+                <legend></legend>
+                <button type="submit" class="submitbtn">Log In</button>
+                <button type="reset" class="cancelbtn">Cancel</button>
+
+            </fieldset>
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/kea.js"></script>
+
+</body>
+
+</html>

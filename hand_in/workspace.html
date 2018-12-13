@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Workspace </title>
+    <style>
+        .logo {
+        width: 50%;
+        height: auto;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .header-right {
+        float: right;
+        position: relative;
+    }
+    .header-left {
+        float: left;
+        position: relative;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .header {
+        overflow: hidden;
+        background-color: rgb(76, 55, 75);
+        text-align: center;
+
+    }
+
+    .logoheader {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 14px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .header-right,
+    .logoheader {
+        display: inline;
+    }
+
+    #centeredmenu {
+   float:left;
+   width:100%;
+   background: rgb(255,255,255);
+   overflow:hidden;
+   position:relative;
+        margin-left: 0;
+        margin-right: 0;
+    
+}
+#centeredmenu ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+#centeredmenu ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+#centeredmenu ul li a {
+   display:block;
+   margin:0 0 0 0px;
+   padding:7px 10px;
+   width: 73.2px;
+   background:white;
+   color:grey;
+   text-decoration:none;
+   line-height:1.3em;
+    font-size: 12px;
+    border: 1px solid grey;
+    font-weight: bold;
+}
+#centeredmenu ul li a:hover {
+   background:rgb(54,53,73);
+   color:white;
+}
+#centeredmenu ul li a.active,
+#centeredmenu ul li a.active:hover {
+   color:white;
+   background:rgb(54,53,73);
+    font-weight: bold;
+}
+
+    .buttons {
+        background-color: rgb(255, 180, 170);
+        border: 1px solid grey;
+        width: 120px;
+        text-align: center;
+        margin-top: 15%;
+        padding: 10px 0 10px 0;
+        height: 40px;
+    }
+
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    input.search {
+        border: 1px solid grey;
+        background-color: rgb(255, 180, 170);
+        background-image: url(search.png);
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: 15px center;
+        text-align: center;
+        width: 250px;
+        height: 50px;
+        border-radius: 50px;
+        }
+    
+    .center{
+        margin:0 auto;
+        display:block;
+        text-align:center;
+        margin-top: 45%;
+}
+    .students {
+  width: 90%;
+  height: 300px;
+  overflow: auto;
+  margin: 0 auto;
+        margin-top: 5%
+}
+    .studentrow{
+        margin-bottom: 15px;
+        background-color: rgb(255, 180, 170);
+    }
+    
+</style>
+
+</head>
+
+
+<body>
+    <div class="header">
+       <div class="header-left">
+            <a href="index.html"><img src="logout.png" width="20px" height="20px"></a>
+        </div>
+        <div class="logoheader">
+            <img src="kealogo.jpg" class="logo">
+        </div>
+        <div class="header-right">
+            <img src="notification.png" width="20px" height="20px">
+            <img src="photo.jpg" width="20px" height="20px">
+        </div>
+    </div>
+
+    <div id="centeredmenu">
+        <ul>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">Student Info</a></li>
+            <li><a href="#">1st Semester</a></li>
+            <li><a href="workspace.html" class="active">Workspace</a>
+        </ul>
+    </div>
+    <div class="buttonWrapper">
+        <a href="workspace2.html">
+            <div class="buttons" style="float:left; margin-left: 13%;">
+                <img src="group.png" width="100px">
+            </div>
+        </a>
+        <a href="newgroup.html" style="color:black;">
+            <div class="buttons" style="float:right; margin-right: 13%;">
+                <img src="rounded-add-button.png" width="25px">
+                <p style="margin:0">Create new</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="center">
+        <form>
+            <input class="search" type="text" name="search" placeholder="Search for a student" required />
+        </form>
+    </div>
+
+    <div class="students">
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="male1.jpg" width="35px" height="35px">
+            <span>Tomas Andersen</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">MMD</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female1.png" width="35px" height="35px">
+            <span>Georgiana Grigore</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">CS</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female2.png" width="35px" height="35px">
+            <span>Ionela Valu</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">CS</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="male2.jpg" width="35px" height="35px">
+            <span>Cosmin Colan</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">MMD</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="male3.jpg" width="35px" height="35px">
+            <span>Radu Onescu</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">BIT</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="male1.jpg" width="35px" height="35px">
+            <span>Catalin Atanase</span>
+            <span style="color: rgb(252,248,248); float: right;margin-right: 5px;">BIT</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female1.png" width="35px" height="35px">
+            <span>Iulia Rotaru</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">MMD</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female1.png" width="35px" height="35px">
+            <span>Andreea Balaban</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">BIT</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female2.png" width="35px" height="35px">
+            <span>Denisa Sima</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">CS</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
