@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Group Workspace </title>
+    <style>
+        .logo {
+            width: 50%;
+            height: auto;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .header-right {
+            float: right;
+            position: relative;
+        }
+
+        .header-left {
+            float: left;
+            position: relative;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: rgb(76, 55, 75);
+            text-align: center;
+
+        }
+
+        .logoheader {
+
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin-left: 13px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header-right,
+        .logoheader {
+            display: inline;
+        }
+
+        #centeredmenu {
+            float: left;
+            width: 100%;
+            background: rgb(255, 255, 255);
+            overflow: hidden;
+            position: relative;
+            margin-left: 0;
+            margin-right: 0;
+
+        }
+
+        #centeredmenu ul {
+            clear: left;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 50%;
+            text-align: center;
+        }
+
+        #centeredmenu ul li {
+            display: block;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            right: 50%;
+        }
+
+        #centeredmenu ul li a {
+            display: block;
+            margin: 0 0 0 0px;
+            padding: 7px 10px;
+            width: 69.4px;
+            background: white;
+            color: grey;
+            text-decoration: none;
+            line-height: 1.3em;
+            font-size: 12px;
+            border: 1px solid grey;
+            font-weight: bold;
+        }
+
+        #centeredmenu ul li a:hover {
+            background: rgb(54, 53, 73);
+            color: white;
+        }
+
+        #centeredmenu ul li a.active,
+        #centeredmenu ul li a.active:hover {
+            color: white;
+            background: rgb(54, 53, 73);
+            font-weight: bold;
+        }
+
+        .students {
+            width: 90%;
+            height: 300px;
+            overflow: auto;
+            margin: 0 auto;
+            margin-top: 5%
+        }
+
+        .studentrow {
+            margin-bottom: 15px;
+            background-color: white;
+        }
+        
+        .studentrow:hover{
+            background-color: rgb(255, 180, 170);
+        }
+            input.addstudents {
+        border: 0;
+        background-color: rgb(255, 180, 170);
+        background-image: url(rounded-add-button.png);
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: 15px center;
+        text-align: center;
+        width: 90%;
+        height: 50px;
+        }
+        input.addaname {
+        border: 0;
+        background-color: rgb(255, 180, 170);
+        background-image: url(rounded-add-button.png);
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: 15px center;
+        text-align: center;
+        width: 90%;
+        height: 50px;
+        }
+        
+        input.chooseassignment {
+        border: 0;
+        background-color: rgb(255, 180, 170);
+        background-image: url(todo.png);
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: 15px center;
+        text-align: center;
+        width: 90%;
+        height: 50px;
+        }
+    .center{
+        margin:0 auto;
+        display:block;
+        text-align:center;
+    
+}
+        .assignmentscontainer {
+            width: 90%;
+            height: 100px;
+            overflow: auto;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+
+        .assignmentrow {
+            margin-bottom: 15px;
+            background-color: white;
+            
+        }
+        .assignmentrow:hover {
+            background-color: rgb(255, 180, 170);
+        }
+        
+        .create{
+            border: 0;
+        background-color: rgb(255, 180, 170);
+        background-image: url(finish.png);
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: 15px center;
+        text-align: center;
+        width: 90%;
+        height: 50px;
+            vertical-align: middle;
+        }
+        
+        img.createimage {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    h4.createtext {
+        display: inline;
+        vertical-align: middle;
+    }
+    .createcontainer
+    {
+        margin: 0 auto;
+        display: block;
+        background-color: rgb(255, 180, 170);
+        width: 85%;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        vertical-align: middle;
+        padding: 10px;
+    }
+
+    </style>
+
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="workspace.html"><img src="undo.png" width="20px" height="20px"></a>
+        </div>
+        <div class="logoheader">
+            <img src="kealogo.jpg" class="logo">
+        </div>
+        <div class="header-right">
+            <img src="notification.png" width="20px" height="20px">
+            <img src="photo.jpg" width="20px" height="20px">
+        </div>
+    </div>
+
+
+
+    <div id="centeredmenu">
+        <ul>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">Student Info</a></li>
+            <li><a href="#">1st Semester</a></li>
+            <li><a href="workspace.html" class="active">Workspace</a></li>
+        </ul>
+    </div>
+    <div class="center" style="margin-top: 15%;">
+        <form>
+            <input class="addstudents" type="text" name="addstudents" placeholder="Add students..." required>
+        </form>
+    </div>
+
+    <div class="students">
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="male1.jpg" width="35px" height="35px">
+            <span>Tomas Andersen</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">MMD</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female1.png" width="35px" height="35px">
+            <span>Georgiana Grigore</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">CS</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female2.png" width="35px" height="35px">
+            <span>Ionela Valu</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">CS</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="male2.jpg" width="35px" height="35px">
+            <span>Cosmin Colan</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">MMD</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="male3.jpg" width="35px" height="35px">
+            <span>Radu Onescu</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">BIT</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="male1.jpg" width="35px" height="35px">
+            <span>Catalin Atanase</span>
+            <span style="color: rgb(252,248,248); float: right;margin-right: 5px;">BIT</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female1.png" width="35px" height="35px">
+            <span>Iulia Rotaru</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">MMD</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female1.png" width="35px" height="35px">
+            <span>Andreea Balaban</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">BIT</span>
+        </div>
+        <div class="studentrow">
+            <img style="vertical-align:middle" src="female2.png" width="35px" height="35px">
+            <span>Denisa Sima</span>
+            <span style="color: rgb(252,248,248); float: right; margin-right: 5px;">CS</span>
+        </div>
+    </div>
+
+    <div class="center" style="margin-top: 10%;">
+        <form>
+            <input class="addaname" type="text" name="addaname" placeholder="Add a name" required>
+        </form>
+    </div>
+
+    <div class="center" style="margin-top: 10%;">
+        <form>
+            <input class="chooseassignment" type="text" name="chooseassignment" placeholder="Choose assignment" required>
+        </form>
+    </div>
+    <div class="assignmentscontainer">
+        <div class="assignmentrow">
+            <span>00.01.01 Fronter Quiz</span>
+        </div>
+        <div class="assignmentrow">
+            <span>00.01.02 Link to your photo on you</span>
+        </div>
+        <div class="assignmentrow">
+            <span>00.01.03 Photoshop Your Profile</span>
+        </div>
+        <div class="assignmentrow">
+            <span>00.01.04 Presentation</span>
+        </div>
+        <div class="assignmentrow">
+            <span>01.01 Content first</span>
+        </div>
+
+    </div>
+
+    <a href="chat.html" style="text-decoration: none; color: black;">
+        <div class="createcontainer">
+            <img class='createimage' src='finish.png' width="30px" height="30px">
+            <h4 class='createtext'>Create</h4>
+        </div>
+    </a>
+
+
+</body>
+
+</html>

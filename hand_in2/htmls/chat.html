@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Group Workspace </title>
+    <style>
+        .logo {
+            width: 50%;
+            height: auto;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .header-right {
+            float: right;
+            position: relative;
+        }
+
+        .header-left {
+            float: left;
+            position: relative;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: rgb(76, 55, 75);
+            text-align: center;
+
+        }
+
+        .logoheader {
+
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin-left: 13px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header-right,
+        .logoheader {
+            display: inline;
+        }
+
+        #centeredmenu {
+            float: left;
+            width: 100%;
+            background: rgb(255, 255, 255);
+            overflow: hidden;
+            position: relative;
+            margin-left: 0;
+            margin-right: 0;
+
+        }
+
+        #centeredmenu ul {
+            clear: left;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 50%;
+            text-align: center;
+        }
+
+        #centeredmenu ul li {
+            display: block;
+            float: left;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            right: 50%;
+        }
+
+        #centeredmenu ul li a {
+            display: block;
+            margin: 0 0 0 0px;
+            padding: 7px 10px;
+            width: 73.2px;
+            background: white;
+            color: grey;
+            text-decoration: none;
+            line-height: 1.3em;
+            font-size: 12px;
+            border: 1px solid grey;
+            font-weight: bold;
+        }
+
+        #centeredmenu ul li a:hover {
+            background: rgb(54, 53, 73);
+            color: white;
+        }
+
+        #centeredmenu ul li a.active,
+        #centeredmenu ul li a.active:hover {
+            color: white;
+            background: rgb(54, 53, 73);
+            font-weight: bold;
+        }
+
+        img.groupimage {
+            display: inline;
+            vertical-align: middle;
+        }
+
+        h4.grouptext {
+            display: inline;
+        }
+
+        img.chatimageleft {
+            display: inline;
+            vertical-align: middle;
+
+        }
+
+        span.chattextleft {
+            display: inline;
+            vertical-align: middle;
+        }
+
+
+        span.chattextright {
+            display: inline;
+            vertical-align: middle;
+            float: right;
+        }
+
+        img.chatimageright {
+            display: inline;
+            vertical-align: middle;
+            float: right;
+        }
+        
+        .groupcontainer{
+            border: 1px solid grey;
+            height: 200px;
+            width: 90%;
+            border-radius: 30px;
+            margin: 0 auto;
+            background-color: rgb(232,227,227);
+            overflow:auto;
+            margin-bottom: 40px;
+        }
+        input.newmessage {
+        border: 1px solid grey;
+        background-color: white;
+        background-image: url(send-button.png);
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        background-position: 280px center;
+        text-align: center;
+        width: 300px;
+        height: 20px;
+        border-radius: 50px;
+        }
+    
+    .centernewmessage{
+        margin:0 auto;
+        display:block;
+        text-align:center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+}
+
+         .icons {
+        height: 128px;
+        padding: 20px;
+        display: inline;
+        }
+             .fliptext {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  color: red;
+  animation: mirrorflip 10s 0s linear infinite;
+}
+
+.iconBox {
+text-align: center;
+width: 65px;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.iconBox img {
+display: inline-block;
+    width: 65px;
+}
+        
+@keyframes mirrorflip {
+	0% {
+		transform: scale(1, 1);
+		-webkit-transform: scale(1, 1);
+		-moz-transform: scale(1, 1);
+		-o-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		
+	}
+	50% {
+		transform: scale(-1, 1);
+		-webkit-transform: scale(-1, 1);
+		-moz-transform: scale(-1, 1);
+		-o-transform: scale(-1, 1);
+		-ms-transform: scale(-1, 1);
+	}
+	100% {
+		transform: scale(1, 1);
+		-webkit-transform: scale(1, 1);
+		-moz-transform: scale(1, 1);
+		-o-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+	}
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="workspace.html"><img src="undo.png" width="20px" height="20px"></a>
+        </div>
+        <div class="logoheader">
+            <img src="kealogo.jpg" class="logo">
+        </div>
+        <div class="header-right">
+            <img src="notification.png" width="20px" height="20px">
+            <img src="photo.jpg" width="20px" height="20px">
+        </div>
+    </div>
+
+
+
+    <div id="centeredmenu">
+        <ul>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">Student Info</a></li>
+            <li><a href="#">1st Semester</a></li>
+            <li><a href="workspace.html" class="active">Workspace</a></li>
+        </ul>
+    </div>
+    <h3 style="text-align: center">CRAZY CATS</h3>
+    <span style="display: block; margin-left: 25px;">Assignment 02.01.04 Conclusions from peer review</span>
+    <span style="font-weight: bold; display: block; margin-left: 25px;">Task description</span>
+    <span style="color: red; display: block; margin-left: 25px;" class="fliptext">Deadline 13/12/2018 22:00</span>
+    <div class="groupchattext" style="margin-left: 25px; margin-bottom: 10px;">
+        <img class='groupimage' src='group2.png' width="30px" height="30px">
+        <h4 class='grouptext'>Group chat</h4>
+    </div>
+    <div class="groupcontainer">
+        <div class="message" style="margin-top: 10px; margin-left: 10px">
+            <img class='chatimageleft' src='male1.jpg' width="30px" height="30px">
+            <span class='chattextleft' style="background-color: rgb(142,127,174); padding: 7.5px; border-radius: 15px">I am really struggling with JavaScript</span>
+        </div>
+        <div class="message" style="margin-top: 10px; margin-left: 10px">
+            <img class='chatimageleft' src='female1.png' width="30px" height="30px">
+            <span class='chattextleft' style="background-color: rgb(255,180,170); padding: 7.5px; border-radius: 15px;">Me too!!!!</span>
+        </div>
+        <div class="message" style="margin-top: 10px; margin-right: 10px">
+            <img class='chatimageright' src='female1.png' width="30px" height="30px" style="margin-left: 5px">
+            <span class='chattextright' style="background-color: rgb(240,72,152); padding: 7.5px; border-radius: 15px;">I just want to sleep</span>
+        </div>
+        <div class="message" style="margin-top: 50px; margin-left: 10px">
+            <img class='chatimageleft' src='male1.jpg' width="30px" height="30px">
+            <span class='chattextleft' style="background-color: rgb(142,127,174); padding: 7.5px; border-radius: 15px">Same..</span>
+        </div>
+        <div class="message" style="margin-top: 10px; margin-left: 10px">
+            <img class='chatimageleft' src='female1.png' width="30px" height="30px">
+            <span class='chattextleft' style="background-color: rgb(255,180,170); padding: 7.5px; border-radius: 15px;">Have you finished the assignment?</span>
+        </div>
+        <div class="centernewmessage">
+            <form>
+                <input class="newmessage" type="text" name="newmessage" placeholder="Type in your message.." required />
+            </form>
+        </div>
+    </div>
+    <div class="icons">
+        <div class="iconBox">
+            <p><img src="files.png" alt="Files">Files</p>
+        </div>
+        <div class="iconBox">
+            <p><img src="videocall.png" alt="Videocall" />Videocall</p>
+        </div>
+        <div class="iconBox">
+            <p><img src="call.png" alt="Call" />Call</p>
+        </div>
+        <div class="iconBox">
+            <p><img src="screensharing.png" alt="Screen Sharing" />Screen Sharing</p>
+        </div>
+        <div class="iconBox">
+            <p><img src="askateacher.png" alt="Ask a teacher" />Ask a teacher</p>
+        </div>
+    </div>
+</body>
+
+</html>

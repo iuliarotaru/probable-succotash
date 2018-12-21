@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Group Workspace </title>
+    <style>
+        .logo {
+        width: 50%;
+        height: auto;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .header-right {
+        float: right;
+        position: relative;
+    }
+    .header-left {
+        float: left;
+        position: relative;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .header {
+        overflow: hidden;
+        background-color: rgb(76, 55, 75);
+        text-align: center;
+
+    }
+
+    .logoheader {
+
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 13px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .header-right,
+    .logoheader {
+        display: inline;
+    }
+
+    #centeredmenu {
+        float: left;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        overflow: hidden;
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+
+    #centeredmenu ul {
+        clear: left;
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        left: 50%;
+        text-align: center;
+    }
+
+    #centeredmenu ul li {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        right: 50%;
+    }
+
+    #centeredmenu ul li a {
+        display: block;
+        margin: 0 0 0 0px;
+        padding: 7px 10px;
+        width: 73.2px;
+        background: white;
+        color: grey;
+        text-decoration: none;
+        line-height: 1.3em;
+        font-size: 12px;
+        border: 1px solid grey;
+        font-weight: bold;
+    }
+
+    #centeredmenu ul li a:hover {
+        background: rgb(54, 53, 73);
+        color: white;
+    }
+
+    #centeredmenu ul li a.active,
+    #centeredmenu ul li a.active:hover {
+        color: white;
+        background: rgb(54, 53, 73);
+        font-weight: bold;
+    }
+    
+    input.search {
+        border: 1px solid grey;
+        background-color: rgb(255, 180, 170);
+        background-image: url(search.png);
+        background-repeat: no-repeat;
+        background-size: 25px 25px;
+        background-position: 15px center;
+        text-align: center;
+        width: 300px;
+        height: 35px;
+        border-radius: 50px;
+        }
+    
+    .center{
+        margin:0 auto;
+        display:block;
+        text-align:center;
+        margin-top: 15%;
+}
+    
+    .row {
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 10px
+}
+
+.collumn {
+	width: 150px;
+  height: 100px;
+  margin: 0 10px;
+	background: rgb(255, 180, 170);;
+  display: inline-block;
+  font-size: medium;
+  text-align: left;
+    position: relative;
+}
+    
+    .containers{
+        margin-top:10%;
+    }
+    
+    .title
+    {
+        display: block; 
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .confirmation{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .assigment{
+        text-align: center;
+        font-size: 12px;
+        position: absolute;
+        bottom: 0;
+            left: 0;
+    right: 0;
+    }
+    
+    .collumn img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="workspace.html"><img src="undo.png" width="20px" height="20px"></a>
+        </div>
+        <div class="logoheader">
+            <img src="kealogo.jpg" class="logo">
+        </div>
+        <div class="header-right">
+            <img src="notification.png" width="20px" height="20px">
+            <img src="photo.jpg" width="20px" height="20px">
+        </div>
+    </div>
+
+
+
+    <div id="centeredmenu">
+        <ul>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">Student Info</a></li>
+            <li><a href="#">1st Semester</a></li>
+            <li><a href="workspace.html" class="active">Workspace</a></li>
+        </ul>
+    </div>
+    <div class="center">
+        <form>
+            <input class="search" type="text" name="search" placeholder="Search from your last group" required />
+        </form>
+    </div>
+    <div class="containers">
+        <div class="row">
+            <div class="collumn">
+                <span class="title">Cactus Field</span>
+                <img class="confirmation" src="cancel.png" width="35px" height="35px">
+                <span class="assigment">03.02.01 Responsive Website</span>
+            </div>
+            <div class="collumn">
+                <span class="title">Los Companeros</span>
+                <img class="confirmation" src="check2.png" width="35px" height="35px">
+                <span class="assigment">03.02.01 Responsive Website</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="collumn">
+                <span class="title">Cactus Field</span>
+                <img class="confirmation" src="cancel.png" width="35px" height="35px">
+                <span class="assigment">03.02.01 Responsive Website</span>
+            </div>
+            <div class="collumn">
+                <span class="title">Los Companeros</span>
+                <img class="confirmation" src="check2.png" width="35px" height="35px">
+                <span class="assigment">03.02.01 Responsive Website</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="collumn">
+                <span class="title">Los Companeros</span>
+                <img class="confirmation" src="check2.png" width="35px" height="35px">
+                <span class="assigment">03.02.01 Responsive Website</span>
+            </div>
+            <div class="collumn">
+                <span class="title">Cactus Field</span>
+                <img class="confirmation" src="check2.png" width="35px" height="35px">
+                <span class="assigment">03.02.01 Responsive Website</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="collumn">
+                <span class="title">Cactus Field</span>
+                <img class="confirmation" src="check2.png" width="35px" height="35px">
+                <span class="assigment">03.02.01 Responsive Website</span>
+            </div>
+            <div class="collumn">
+                <span class="title">Anonymous</span>
+                <img class="confirmation" src="check2.png" width="35px" height="35px">
+                <span class="assigment">03.02.01 Responsive Website</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
